@@ -1,0 +1,94 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 10em auto;
+    border: none;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+p, button{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.card:first-child{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.75em 0 0 0.75em;
+
+}
+.card:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+}
+.card:last-child{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.75em 0.75em 0;
+}
+.card{
+    padding: 3em;
+    flex: 1;
+}
+.card p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.card h2{
+    color: hsl(0, 0%, 95%);
+}
+button{
+    background-color:  hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 2em;
+    padding: 1em 1em;
+    margin-top: 5em;
+    width: 60%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: inherit;
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%) !important;
+}
+.card:first-child>button{
+    color: hsl(31, 77%, 52%);
+}
+.card:nth-child(2)>button{
+    color: hsl(184, 100%, 22%);
+}
+.card:last-child>button{
+    color: hsl(179, 100%, 13%);
+}
+
+/*Display Grid*/
+.grid{
+    width: 80%;
+    display: grid;
+    grid: 150px 200px / auto auto auto auto auto;
+    grid-gap: 10px;
+}
+#one{
+    background-color: orange;
+    grid-column: 1/ span 3;
+}
+#two{
+    background-color: yellow;
+    grid-column: 4/ span 2;
+    
+}
+#three{
+    background-color: green;
+    grid-column: 1/ span 2;
+}
+
+#four{
+    display: grid;
+    grid-column: 3/ span 3;
+    grid:
+        70px 120px / auto;
+        grid-gap: 10px;
+    
+}
+
+#four div{
+    background-color:aqua;
+}
